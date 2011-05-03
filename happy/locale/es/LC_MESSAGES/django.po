@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-03 11:50+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: happyapp/templates/happyapp/good_for_you.html:4
+msgid "Good for you, continue beeing happy :D"
+msgstr "Me alegro, sigue siendo felíz :D"
+
+#: happyapp/templates/happyapp/good_for_you.html:9
+msgid ""
+"\n"
+"Good for you, continue beeing happy, you are doing it ok.\n"
+msgstr ""
+"\n"
+"Me alegro, sigue siendo felíz, lo estás haciendo bien.\n"
+
+#: happyapp/templates/happyapp/good_for_you.html:14
+#: happyapp/templates/happyapp/index.html:25
+msgid "Try to make someone happier"
+msgstr "Intenta hacer a alguien un poco más felíz"
+
+#: happyapp/templates/happyapp/index.html:6
+msgid "Are you happy?"
+msgstr "¿Eres felíz?"
+
+#: happyapp/templates/happyapp/index.html:12
+msgid "Yes"
+msgstr "Sí"
+
+#: happyapp/templates/happyapp/index.html:13
+msgid "today happy people :D"
+msgstr "personas felices hoy :D"
+
+#: happyapp/templates/happyapp/index.html:17
+msgid "No"
+msgstr "No"
+
+#: happyapp/templates/happyapp/index.html:18
+msgid "today unhappy people :("
+msgstr "personas infelices hoy :("
+
+#: happyapp/templates/happyapp/why.html:6
+msgid "Why are you so unhappy?"
+msgstr "¿Por qué eres tan infelíz?"
+
+#: happyapp/templates/happyapp/why.html:12
+msgid ""
+"Why are you so unhappy? Tell us and maybe someone can give you an advise "
+"that helps to make you happier"
+msgstr ""
+"¿Por qué eres infelíz? Dinoslo y quizás alguien pueda darte un consejo "
+"que te haga algo más felíz"
+
+#: happyapp/templates/happyapp/why.html:16
+#: happyapp/templates/happyapp/why.html:46
+msgid "Send"
+msgstr "Enviar"
+
+#: happyapp/templates/happyapp/why.html:42
+msgid ""
+"Give your advise (you can use <a href=\"http://en.wikipedia.org/wiki/Markdown"
+"\">markdown syntax</a>)"
+msgstr ""
+"Da tu consejo (puedes usar <a href=\"http://en.wikipedia.org/wiki/Markdown"
+"\">sintaxis markdown</a>)"
