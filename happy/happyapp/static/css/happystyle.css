@@ -235,3 +235,32 @@ label {
 .voteform {
     height: 4px;
 }
+
+#makead {
+    text-align: center;
+    margin: 20px auto;
+}
+
+#makead a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+    background: #FF5500;
+    color: white;
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+
+    -moz-box-shadow: 2px 2px 3px #295500;
+    -webkit-box-shadow: 2px 2px 3px #295500;
+    box-shadow: 2px 2px 3px #295500;
+}
+
+#makead a:hover {
+    color: black;
+    background: #FFCC00;
+}

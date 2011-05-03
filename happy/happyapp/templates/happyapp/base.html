@@ -1,25 +1,29 @@
+{% load i18n %}
 <html>
 
     <head>
         <title> {% block title %} Be happy :D {% endblock %} </title>
         <link rel="stylesheet" href="{{ STATIC_URL }}css/happystyle.css" type="text/css" />
+        <link rel="shortcut icon" href="{{ STATIC_URL }}favicon.ico" type="image/x-icon" />
         {% block extrahead %}
         {% endblock %}
     </head>
 
     <body>
     <div id="bg">
-    <div id="head">
-        {% block head %}{% endblock %}
-        <div id="content">
-            {% block content %}
-            {% endblock %}
+        <div id="head">
+            {% block head %}{% endblock %}
+            <div id="content">
+                {% block content %}
+                {% endblock %}
+            </div>
+            <div id="prefoot"></div>
+            <div id="foot">
+                <a href="{% url index %}">{% trans "Index" %}</a> |
+                <a href="{% url advise %}">{% trans "Today problems" %}</a> |
+                Developped by <a href="http://wadobo.com">wadobo</a>
+            </div>
         </div>
-        <div id="prefoot"></div>
-        <div id="foot">
-            Developped by <a href="http://wadobo.com">wadobo</a>
-        </div>
-    </div>
     </div>
     </body>
 
