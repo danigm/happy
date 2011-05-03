@@ -1,0 +1,17 @@
+{% extends "happyapp/base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Good for you, continue beeing happy :D" %}{% endblock %}
+
+{% block content %}
+
+<h1 class="ok">
+{% blocktrans %}
+Good for you, continue beeing happy, you are doing it ok.
+{% endblocktrans %}
+</h1>
+
+<a href="{% url advise %}">{% trans "Try to make someone happier" %}</a>
+
+{% endblock %}
+

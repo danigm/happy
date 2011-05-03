@@ -1,0 +1,237 @@
+h1 {
+    text-align: center;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    background: transparent url('../images/h1bg.png');
+    padding: 10px;
+}
+
+#content {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    min-height: 271px;
+}
+
+.button {
+    text-align: center;
+}
+
+#yesno {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#yesdiv {
+    float: left;
+    margin: 10px;
+    width: 200px;
+}
+
+#yesdiv label {
+    font-weight: bold;
+    font-size: large;
+    color: green;
+}
+
+#nodiv {
+    float: right;
+    margin: 10px;
+    width: 200px;
+}
+
+#nodiv label {
+    font-weight: bold;
+    font-size: large;
+    color: red;
+}
+
+#yes {
+    border: none;
+    background: transparent url('../images/happy.png');
+    width: 200px;
+    height: 200px;
+    display: block;
+    color: transparent;
+    cursor: pointer;
+}
+
+#yes:hover {
+    background: transparent url('../images/happy-hover.png');
+}
+
+#no {
+    border: none;
+    background: transparent url('../images/unhappy.png');
+    width: 200px;
+    height: 200px;
+    display: block;
+    color: transparent;
+    cursor: pointer;
+}
+
+#no:hover {
+    background: transparent url('../images/unhappy-hover.png');
+}
+
+.clear {
+    clear: both;
+}
+
+.ok {
+    color: green;
+}
+
+.bad {
+    color: red;
+}
+
+textarea {
+    width: 100%;
+    height: 140px;
+    font-size: large;
+}
+
+#reason {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    border: 3px dashed #555;
+    padding: 20px;
+    background: #efefef;
+}
+
+h3 {
+    border-bottom: 1px solid black;
+}
+
+#advise {
+    width: 100%;
+    height: 130px;
+}
+
+.nolist {
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.p1 {
+    border: none;
+    background: transparent url('../images/happy-small.png');
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.m1 {
+    border: none;
+    background: transparent url('../images/unhappy-small.png');
+    width: 20px;
+    height: 20px;
+    color: transparent;
+    cursor: pointer;
+}
+
+.votes {
+    float: left;
+    margin: 2px;
+    padding: 4px;
+    margin-right: 10px;
+    border: 1px dashed black;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    min-width: 70px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    background: transparent url('../images/h1bg.png');
+}
+
+.advise {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px dashed green;
+    background: #e6ffe6;
+    margin-bottom: 10px;
+}
+
+.advise p {
+    margin: 10px;
+    text-align: justify;
+}
+
+.problem {
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+    border: 2px dashed red;
+    background: #ffe6e6;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.problem a {
+    color: black;
+    text-decoration: none;
+}
+
+.info {
+    float: right;
+}
+
+.problem:hover {
+    border: 2px dashed green;
+    background: #e6ffe6;
+    text-decoration: underline;
+}
+
+#prefoot {
+    background: #729fcf url('../images/grass.png') top left repeat-x;
+    height: 39px;
+    width: 100%;
+}
+
+#foot {
+    background: #8AE234;
+    min-height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: small;
+}
+
+#bg {
+    background: #729fcf;
+}
+
+body {
+    background: #8AE234;
+    margin: 0px;
+    padding: 0px;
+}
+
+#head {
+    background: transparent url('../images/clouds.png') top left repeat-x;
+}
+
+textarea {
+    border: 2px solid gray;
+}
+
+label {
+    position: relative;
+    top: 10px;
+}
+
+.voteform {
+    height: 4px;
+}

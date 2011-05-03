@@ -1,0 +1,26 @@
+<html>
+
+    <head>
+        <title> {% block title %} Be happy :D {% endblock %} </title>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/happystyle.css" type="text/css" />
+        {% block extrahead %}
+        {% endblock %}
+    </head>
+
+    <body>
+    <div id="bg">
+    <div id="head">
+        {% block head %}{% endblock %}
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="prefoot"></div>
+        <div id="foot">
+            Developped by <a href="http://wadobo.com">wadobo</a>
+        </div>
+    </div>
+    </div>
+    </body>
+
+</html>

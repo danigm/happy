@@ -1,0 +1,19 @@
+{% extends "happyapp/base.html" %}
+
+{% block content %}
+    <ul class="nolist">
+    {% for p in problems %}
+        <li class="problem">
+            <a href="{% url why p.id %}">
+            <div class="info">
+                {{ p.day|timesince }} ({{ p.advise_set.count }})
+            </div>
+            <div class="reason">
+                {{ p.reason|truncatewords:30 }}
+            </div>
+            <div class="clear"></div>
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

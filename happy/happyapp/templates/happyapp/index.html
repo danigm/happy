@@ -1,0 +1,27 @@
+{% extends "happyapp/base.html" %}
+{% load i18n %}
+
+{% block content %}
+
+<h1>{% trans "Are you happy?" %}</h1>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <div id="yesno">
+    <div class="button" id="yesdiv">
+        <button name="yes" id="yes">{% trans "Yes" %}</button>
+        <label for="yes">{% trans "today happy people :D" %} {{ yes_today }}</label>
+    </div>
+
+    <div class="button" id="nodiv">
+        <button name="no" id="no">{% trans "No" %}</button>
+        <label for="no">{% trans "today unhappy people :(" %} {{ no_today }}</label>
+    </div>
+    </div>
+</form>
+
+<div class="clear"></div>
+
+<a href="{% url advise %}">{% trans "Try to make someone happier" %}</a>
+
+{% endblock %}

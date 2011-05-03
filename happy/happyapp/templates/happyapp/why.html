@@ -1,0 +1,51 @@
+{% extends "happyapp/base.html" %}
+{% load i18n %}
+{% load markup %}
+
+{% block title %}
+{% trans "Why are you so unhappy?" %}
+{% endblock %}
+
+{% block content %}
+
+{% if not happy.done %}
+    <h1>{% trans "Why are you so unhappy? Tell us and maybe someone can give you an advise that helps to make you happier" %}</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <textarea id="reason" name="reason"></textarea>
+        <input type="submit" name="submit" value="{% trans "Send" %}"/>
+    </form>
+{% else %}
+    <p id="reason">{{ happy.reason }}</p>
+    <ul class="nolist">
+        {% for ad, voted in ads %}
+        <li>
+            <div class="advise">
+                <div class="votes">
+                    {{ ad.votes }}
+                    {% if not voted %}
+                        <form method="POST" action="{% url vote ad.id %}" class="voteform">
+                            {% csrf_token %}
+                            <button class="p1" name="p1">+</button>
+                            <button class="m1" name="m1">-</button>
+                        </form>
+                    {% endif %}
+                </div>
+                <p>
+                {{ ad.ad|markdown }}
+                </p>
+                <div class="clear"></div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+    <h3>{% trans 'Give your advise (you can use <a href="http://en.wikipedia.org/wiki/Markdown">markdown syntax</a>)' %}</h3>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <textarea id="advise" name="advise"></textarea>
+        <input type="submit" name="submit" value="{% trans "Send" %}"/>
+    </form>
+{% endif %}
+
+{% endblock %}
+
