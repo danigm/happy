@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-05-03 11:50+0200\n"
+"POT-Creation-Date: 2011-05-03 16:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: happyapp/templates/happyapp/base.html:22
+msgid "Index"
+msgstr "Principio"
+
+#: happyapp/templates/happyapp/base.html:23
+msgid "Today problems"
+msgstr "Problemas de hoy"
 
 #: happyapp/templates/happyapp/good_for_you.html:4
 msgid "Good for you, continue beeing happy :D"
@@ -29,11 +37,6 @@ msgid ""
 msgstr ""
 "\n"
 "Me alegro, sigue siendo felíz, lo estás haciendo bien.\n"
-
-#: happyapp/templates/happyapp/good_for_you.html:14
-#: happyapp/templates/happyapp/index.html:25
-msgid "Try to make someone happier"
-msgstr "Intenta hacer a alguien un poco más felíz"
 
 #: happyapp/templates/happyapp/index.html:6
 msgid "Are you happy?"
@@ -55,6 +58,10 @@ msgstr "No"
 msgid "today unhappy people :("
 msgstr "personas infelices hoy :("
 
+#: happyapp/templates/happyapp/makead.html:4
+msgid "Try to make someone happier"
+msgstr "Intenta hacer a alguien un poco más felíz"
+
 #: happyapp/templates/happyapp/why.html:6
 msgid "Why are you so unhappy?"
 msgstr "¿Por qué eres tan infelíz?"
@@ -64,8 +71,8 @@ msgid ""
 "Why are you so unhappy? Tell us and maybe someone can give you an advise "
 "that helps to make you happier"
 msgstr ""
-"¿Por qué eres infelíz? Dinoslo y quizás alguien pueda darte un consejo "
-"que te haga algo más felíz"
+"¿Por qué eres infelíz? Dinoslo y quizás alguien pueda darte un consejo que "
+"te haga algo más felíz"
 
 #: happyapp/templates/happyapp/why.html:16
 #: happyapp/templates/happyapp/why.html:46
