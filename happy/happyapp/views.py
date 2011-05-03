@@ -58,12 +58,14 @@ class Why(TemplateView):
 
     def get(self, request, happy):
         self.happy = get_object_or_404(Happy, id=happy)
-        self.sid = request.COOKIES['sessionid']
+        request.session['hassession'] = True
+        self.sid = request.session.session_key
         return super(Why, self).get(request)
 
     def post(self, request, happy):
         self.happy = get_object_or_404(Happy, id=happy)
-        self.sid = request.COOKIES['sessionid']
+        request.session['hassession'] = True
+        self.sid = request.session.session_key
         data = request.POST
 
         if 'reason' in data and self.happy.done:
@@ -93,7 +95,7 @@ class Vote(View):
 
     def post(self, request, advise):
         ad = get_object_or_404(Advise, id=advise)
-        sid = request.COOKIES['sessionid']
+        sid = request.session.session_key
         v = Voter.objects.filter(ad=ad, sid=sid)
         if not v.count():
             if 'p1' in request.POST:
